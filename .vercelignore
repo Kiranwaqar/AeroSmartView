@@ -1,0 +1,11 @@
+.git
+.gitignore
+node_modules
+.env.local
+.DS_Store
+*.log
+.idea
+.vscode
+server/dist
+dist
+playwright

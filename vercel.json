@@ -1,12 +1,7 @@
 {
-  "buildCommand": "npm run build:all",
+  "buildCommand": "npm install && cd server && npm install && cd .. && npm run build:all",
   "outputDirectory": "dist",
   "framework": "vite",
-  "installCommand": "npm run setup",
-  "env": {
-    "VITE_API_URL": "@vite_api_url"
-  },
-  "envPrefix": "VITE_",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
