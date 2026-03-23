@@ -2,18 +2,12 @@
   "buildCommand": "npm run build:all",
   "outputDirectory": "dist",
   "framework": "vite",
-  "nodeVersion": "20.x",
+  "installCommand": "npm run setup",
   "env": {
     "VITE_API_URL": "@vite_api_url"
   },
   "envPrefix": "VITE_",
-  "installCommand": "npm run setup",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "functions": {
-    "api": {
-      "runtime": "nodejs20.x"
-    }
-  }
+  ]
 }
